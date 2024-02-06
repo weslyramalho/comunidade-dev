@@ -1,7 +1,124 @@
-.cabecalho__nav__logo{
-    color: red;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    background-color: var(--cor-primaria);
+ }
+ :root {
+    --cor-primaria: #051D3B;
+    --cor-secundaria: #FFFFFF29;
+    --cor-terciaria: #FFFFFF;
+    --cor-quartiaria: #5081FB;
+    --cor-quinquiaria: #6BD1FF;
+    --fonte-primaria: 'Inter', sans-serif;
+
+
 }
-.cabecalho__nav__logo__destaque{
-    background-color: aquamarine;
-    color: aliceblue;
+
+.cabecalho {
+    display: flex;
+}
+.cabecalho__nav {
+
+    width: 100%;
+
+    margin-left: 32px;
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.cabecalho__nav__logo{
+    width: 145px;
+    height: 34.05;
+    
+}
+.cabecalho__nav__input{
+    width: 752px;
+    height: 56px;
+    border-radius: 8px;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-terciaria);
+    border: none;
+    font-size: 16px;
+    font-family: var(--fonte-primaria) ;
+    
+}
+.cabecalho__nav__usuario {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    width: 106px;
+    gap: 8px;
+    height: 56px;
+}
+.cabecalho__nav__usuario__imagen {
+    width: 32px;
+    height: 32px;
+}
+.cabecalho__nav__usuario__nome {
+    font-size: 16px;
+    font-family: var(--fonte-primaria);
+    color: var(--cor-terciaria);
+    width: 400px;
+
+}
+.area{
+    display: flex;
+    flex-direction: row;
+}
+.area__menu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 28px;
+    margin-left: 32px;
+    gap: 16px;
+}
+.area__menu_link{
+    gap: 16px;
+    text-decoration: none;
+    font-family: var(--fonte-primaria);
+    width: 400;
+    font-size: 16px;
+    color: var(--cor-terciaria);
+    display: flex;
+    align-items: center;
+}
+.area__menu__imagen{
+    
+}
+.area__texto {
+    display: flex;
+    flex-direction: column;
+    width: 752px;
+    height: 366px;
+    margin-top: 28px;
+    margin-left: 56px;
+    background-color: var(--cor-quinquiaria);
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    
+    
+  
+}
+.area__texto__bola {
+    width: 688px;
+    background-color:black;
+    border-radius: 8px;
+}
+.area__texto__ide{
+    width: 688px;
+    height: 302px;
+    color: var(--cor-terciaria);
+    background-color: black;
+    border: none;
+    resize: none;
+    
+}
+
+
+.rodape {
+    padding-bottom: 0px;
 }
