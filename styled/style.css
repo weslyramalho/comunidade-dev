@@ -8,7 +8,8 @@
     --cor-primaria: #051D3B;
     --cor-secundaria: #FFFFFF29;
     --cor-terciaria: #FFFFFF;
-    --cor-quartiaria: #5081FB;
+    --cor-quartiaria:rgba(80, 129, 251, 0.16);
+    ;
     --cor-quinquiaria: #6BD1FF;
     --fonte-primaria: 'Inter', sans-serif;
 
@@ -19,9 +20,7 @@
     display: flex;
 }
 .cabecalho__nav {
-
     width: 100%;
-
     margin-left: 32px;
     margin-top: 32px;
     display: flex;
@@ -32,6 +31,7 @@
 .cabecalho__nav__logo{
     width: 145px;
     height: 34.05;
+   
     
 }
 .cabecalho__nav__input{
@@ -75,6 +75,14 @@
     margin-left: 32px;
     gap: 16px;
 }
+.area__menu__titulo{
+    font-family: var(--fonte-primaria);
+    width: 400;
+    color: var(--cor-terciaria);
+    font-size: 12px;
+    
+
+}
 .area__menu_link{
     gap: 16px;
     text-decoration: none;
@@ -87,6 +95,13 @@
 }
 .area__menu__imagen{
     
+}
+.area__ide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
 }
 .area__texto {
     display: flex;
@@ -104,20 +119,50 @@
   
 }
 .area__texto__bola {
-    width: 688px;
-    background-color:black;
-    border-radius: 8px;
-}
-.area__texto__ide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 688px;
     height: 302px;
+    background-color:black;
+    border-radius: 8px;
+    gap: 8px;
+    
+}
+.area__texto__bola__orden{
+    display: flex;
+    width: 95%;
+    margin-top: 8px;
+    margin-left: 8px;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    gap: 8px;
+}
+.area__texto__ide{
+    margin-left: 8px;
+    width: 656px;
+    height: 234px;
     color: var(--cor-terciaria);
     background-color: black;
     border: none;
     resize: none;
     
 }
-
+.area__ide__botao {
+    margin-top: 20px;
+    margin-left: 58px;
+    gap: 8px;
+    width: 752px;
+    height: 52px;
+    background-color: var(--cor-quartiaria);
+    border-radius: 8px;
+    border: none;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: var(--fonte-primaria);
+    color: var(--cor-terciaria);
+}
 
 .rodape {
     padding-bottom: 0px;
